@@ -1,8 +1,7 @@
 package Test;
 
-import java.util.ArrayList;
+import java.util.Random;
 
-import com.sun.tools.javac.util.ArrayUtils;
 
 public class Asignment2 {
 
@@ -24,26 +23,29 @@ public class Asignment2 {
 		
 		String[] Brithday= {"1/1/1999","2/2/1999","3/3/1999","4/4/1999","5/5/1999","6/6/1999","7/7/1999"};
 		
+		String[] name = new String[10];
+		Random random= new Random();
+		 for(int i=0;i<name.length;i++) {
+			 int randomHo=random.nextInt(Ho.length);
+			 int randomTenDem=random.nextInt(TenDem.length);
+			 int randomTen=random.nextInt(Ten.length);
+			 name[i] =Ho[randomHo]+TenDem[randomTenDem]+Ten[randomTen];
+			 System.out.println(name[i]);
+		 }
 		
 		
-	
-		String[] name = new String[7];
-		for(int i=0;i<7;i++){
-			name[i] =Ho[i]+TenDem[i]+Ten[i];
-			
+		
+		
+		
+		
+		String[] Info= new String[10];
+		for(int i=0;i<name.length;i++) {
+			int randomname=random.nextInt(name.length);
+			int randomID=random.nextInt(ID.length);
+			int randombrithday=random.nextInt(Brithday.length);
+			Info[i]=name[randomname]+"    "+ID[randomID]+"    "+Brithday[randombrithday];
+			System.out.println(Info[i]);
 		}
-		for(int i=0;i<7;i++){
-		 System.out.println(name[i]);
-		}
-		
-		String[] info = new String[7];
-		for(int i=0;i<7;i++){
-			info[i] =name[i]+" "+ID[i]+"  "+Brithday[i];
-		}
-		
-		for(int i=0;i<7;i++){
-			 System.out.println(info[i]);
-			}
 		
 		
 	}
