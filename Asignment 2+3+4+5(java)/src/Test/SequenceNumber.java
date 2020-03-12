@@ -3,23 +3,22 @@ package Test;
 import java.util.Scanner;
 
 public class SequenceNumber {
-	String a,b;
-	void Input() {
+
+	int Input() {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Nhap so day so: ");
 		int n= scanner.nextInt();
-		
+		int a[]= new int[n];
 		for(int i=0;i<n;i++) {
 			System.out.println("Nhap so thu "+i+": ");
-			String a= scanner.nextLine();
-			String b=scanner.nextLine();
-			
+			a[i]=scanner.nextInt();
 		}
+		return(a[n]);
 		
 	}
 	
 	void Print() {
-		System.out.println("Day so la"+a+b);
+		System.out.println(a[n]);
 	}
 	
 	
