@@ -7,17 +7,20 @@ public class salary {
 		yeahh, nahh
 	}
 	public static void main(String[] args) {
-		Scanner s =new Scanner(System.in);
+		
 		worker w =new worker();
 		w.workerinformation();
-		professorornot pon= professorornot.nahh;
-		swicth(professorornot){
-			case yeahh:
+		Scanner s =new Scanner(System.in);
+		System.out.println("Nhap nghe nghiep: ");
+		int job =s.nextInt();
+		if(job==1){
 				professor p = new professor();
-				break;
-			case nahh:
-				
-				
+				p.workerinformation();
+				p.salary();
+		}else {
+				workerwhonotprofessor wwnp = new workerwhonotprofessor();
+				wwnp.workerinformation();
+				wwnp.salary();
 		}
 	}
 

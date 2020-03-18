@@ -8,6 +8,7 @@ public class workerwhonotprofessor extends worker {
 	
 	@Override
 	public void workerinformation{
+		super.workerinformation();
 		System.out.println("Nhap department: ");
 		department =s.nextLine();
 		System.out.println("Nhap working time: ");
